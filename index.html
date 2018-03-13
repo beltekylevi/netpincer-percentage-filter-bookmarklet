@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Netpincer percentage filter bookmarklet</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav></nav>
+  <main>
+    <a href="javascript:!function(){const e=prompt(`What's the minimum %?`),t=(e,n)=>0===n?e:t(e.parentNode,n-1);document.querySelectorAll('.percent').forEach(n=>{parseInt(n.textContent,10)&lt;e&amp;&amp;t(n,6).remove()})}();">Netpincer % filter</a>
+  </main>
+</body>
+</html>
